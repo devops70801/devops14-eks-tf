@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage("git hub cloning"){
             steps{
-                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'devops-eks-project-jenkins-id', url: 'git@github.com:malleshdevops/devops14-eks-tf.git']])
+                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'devops-eks-project-jenkins-id', url: 'git@github.com:devops70801/devops14-eks-tf.git']])
             }
         }
         stage("terraform init"){
